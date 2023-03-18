@@ -1,0 +1,19 @@
+*
+!*/
+
+# track this file
+!.gitignore
+
+# whitelist everything in 
+!zima/Zestaw01/**
+!zima/Zestaw02/**
+!zima/Zestaw03/**
+!zima/Zestaw04/**
+!zima/Zestaw05/**
+!zima/Zestaw06/**
+!zima/Zestaw07/**
+!zima/Projekt/**
+!lato/Zbiory/**
+
+*.x
+*.vscode

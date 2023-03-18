@@ -1,0 +1,38 @@
+==================================================
+Autor: Mateusz Dyszewski        Krakow, 01.12.2022
+==================================================
+
+*Programy:
+===========
+    BubbleSort.x:
+        Program wczytuje liczby ze standardowego wejscia do vectora. Nastepnie sortuje je za pomoca algorytmu bubble sort.
+    InsertionSort.x:
+        Program wczytuje liczby ze standardowego wejscia do vectora. Nastepnie sortuje je za pomoca algorytmu insertion sort.
+    SelectionSort.x:
+        Program wczytuje liczby ze standardowego wejscia do vectora. Nastepnie sortuje je za pomoca algorytmu selection sort.
+    Generator.x:
+        Program generuje n liczb nieposortowanych w zakresie od <1,max>, gdzie n i max sa kolejnymi argumentami wymaganymi do przekazania przy uruchamianiu programu.
+    OperationCounting.x:
+        Program zlicza ilosc poszczegolnych operacji dla insertion sort.
+    OperationTiming.x:
+        Program mierzy czas wykonywania zaimplementowanego algorytmu sortowania.
+
+*Pliki:
+===============
+    Wykres01.png, Wykres02.png:
+        Pliki zawieraja wykresy przedstawiajace czas potrzebny na posortowanie n elementow przez poszczegolne algorytmy
+    Zliczanie.png:
+        Wyniki programu wykonujace polecenie z zadania 2.
+
+*Uruchamianie:
+===============
+    make : 
+        Kompiluje wszystkie programy
+    ./InsertionSort.x, ./BubbleSort.x, ./SelectionSort.x :
+        Uruchamia skompilowany wczesniej program wykonujacy sortowanie za pomoca danego algorytmu
+    ./Generator.x <n> <max>:
+        Uruchamia program generator. Wymagane sa argumenty n i max, ktore oznaczaja kolejno liczbe liczb oraz maksymalny zakres liczb.
+    make tar
+        Pakuje zawartosc folderu do archiwum tar
+    make clean
+        Czysci zawartosc folderu

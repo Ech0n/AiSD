@@ -1,0 +1,20 @@
+==================================================
+Autor: Mateusz Dyszewski        Krakow, 11.12.2022
+==================================================
+
+*Programy:
+===========
+    BinaryTree.x:
+        Program wczytuje liczby ze standardowego wejscia do drzewa binarnego zaimplementowanego w BinaryTree.hpp. Nastepnie program wypisuje w kolejnych liniach:
+        - rozmiar, glebokosc, element minimalny i element maksymalny drzewa
+        - Wartosci elementow w porzadku preorder
+        - Dla liczb od 1 do 9: "Yes" jezeli liczba znajduje sie w drzewie wpp "No"
+
+*Uruchamianie:
+===============
+    make : 
+        Kompiluje program
+    make tar
+        Pakuje zawartosc folderu do archiwum tar
+    make clean
+        Czysci zawartosc folderu
