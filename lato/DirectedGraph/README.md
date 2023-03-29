@@ -1,6 +1,6 @@
 author: Mateusz Dyszewski
 date: 28.03.2023
-#        Directed Graph + BFS
+# Directed Graph + BFS
 -----------------------------------
 Implementation uses my own implementation of LinkedList, Set and PriorityQueue.
 --------------------------------------
