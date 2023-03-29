@@ -1,6 +1,6 @@
 author: Mateusz Dyszewski
 date: 28.03.2023
-#        Directed Graph + BFS
+# Directed Graph + BFS
 -----------------------------------
 Implementation uses my own implementation of Set and PriorityQueue.
 --------------------------------------
@@ -9,14 +9,15 @@ Implementation uses my own implementation of Set and PriorityQueue.
 #### Constructor:
 DirectedGraph(int numVert) constructs graph with number of vertecies passed as argument
 #### Methods:
-void addEdge(int,int) makes an edge between two vertecies
-void removeEdge(int, int) removes an edge between two vertecies
-bool hasEdge(int, int) checks if edge beetwen two edges exists
-Set<int> inConnections(int) returns set of every vertex going into vertex
-Set<int> outConnections(int) returns set of all edges going out from vertex
+void addEdge(int,int) makes an edge between two vertecies\
+void removeEdge(int, int) removes an edge between two vertecies\
+bool hasEdge(int, int) checks if edge beetwen two edges exists\
+Set<int> inConnections(int) returns set of every vertex going into vertex\
+Set<int> outConnections(int) returns set of all edges going out from vertex\
 Set<int> allConnections(int) Returns all edges connected to vertex
 #### Fields:
 const int vertex_count; Field containing size of the graph
+    
 ----------------------------------------
 ## BFS:
 ### Interface:
