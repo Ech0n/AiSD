@@ -2,11 +2,10 @@
 
 #ifndef MDDGRAPH_H
 #define MDDGRAPH_H
-#include "LinkedList.hpp"
 #include "Set.hpp"
 class DirectedGraph{
     public:
-        DirectedGraph(int numVert):vertex_count(numVert),vertexes(new List<int>[numVert]){};    // inicjalizuje graf o numVert wierzchołkach
+        DirectedGraph(int numVert):vertex_count(numVert),vertexes(new Set<int>[numVert]){};    // inicjalizuje graf o numVert wierzchołkach
         void addEdge(int,int);     // dodaje krawędź pomiędzy wierzchołkami i i j
         void removeEdge(int, int);  // usuwa krawędź pomiędzy wierzchołkami i i j
         bool hasEdge(int, int);     // sprawdza czy krawędź pomiędzy wierzchołkami i i j istnieje
@@ -15,7 +14,7 @@ class DirectedGraph{
         Set<int> allConnections(int); // zwraca wszystkie wierzchołki które są połączone z i lub z którymi i jest połączony
         const int vertex_count;
     private:
-        List<int> *vertexes;
+        Set<int> *vertexes;
 };
 
 #endif

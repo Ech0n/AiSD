@@ -113,10 +113,10 @@ void Set<T>::insert(T x){
     if(_size+2>_reserved_size){
         upsize();
     }
-    int *indx = std::lower_bound(arr,arr+_size,x);
-    if(*indx == x){
+    if(isMember(x)){
         return;
     }
+    int *indx = std::lower_bound(arr,arr+_size,x);
     _size++;
     std::rotate(indx,arr+_size,arr+_size+1);
     *indx = x;

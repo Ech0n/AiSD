@@ -2,20 +2,22 @@
 
 
 void DirectedGraph::addEdge(int a,int b){
-    vertexes[a].push_back(b);
+    if(b > vertex_count||a>vertex_count){return;}
+    vertexes[a].insert(b);
 }
 
 void DirectedGraph::removeEdge(int a,int b){
+    if(b > vertex_count || a>vertex_count){return;}
     vertexes[a].remove(b);
 }
 
 bool DirectedGraph::hasEdge(int a,int b){
-    return vertexes[a].find(b) != vertexes[a].end();
+    return vertexes[a].isMember(b);
 }
 Set<int> DirectedGraph::inConnections(int i){
     Set<int> connections;
     for (int j = 0;j<vertex_count;j++){
-        if(vertexes[j].find(i) != vertexes[j].end()){
+        if(vertexes[j].isMember(i)){
             connections.insert(j);
         }
     }

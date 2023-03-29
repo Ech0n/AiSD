@@ -23,5 +23,6 @@ int* BFS(DirectedGraph G,int s){
             ile_sasiadow = kolejka.size();
         }
     }
+    visited_nodes[0]=0;
     return visited_nodes;
 }
